@@ -3,36 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS Starter Kit</title>
+    <title>Flip Clock</title>
 
     <link rel="stylesheet" href="style.css">
-
     <script src="time.js" defer></script>
     <script src="date.js" defer></script>
-
 </head>
-<body>
+<body class="bg-gray-900 text-white flex justify-center items-center min-h-screen">
 
-    <main>
+    <main class="flex flex-col items-center">
   
         <!-- Time -->
-        <time class="time">
-                <data class="hours">HH</data> :
-                <data class="minutes">MM</data> :
-                <data class="seconds">SS</data>
-                <data class="amOrPM">AM/PM</data>
-            </time>
-      
-          
-        <!-- Date -->
-        <time class="date">
-          <data class="month">Month</data>
-          <data class="dayOfMonth">00</data>,
-          <data class="year">0000</data> -
-          <data class="dayOfWeek">SMTWTFS</data>
+        <time class="time flex items-center space-x-1 mb-4">
+            <span class="flip-container">
+                <data class="hours tens flip">0</data>
+            </span>
+            <span class="flip-container">
+                <data class="hours units flip">0</data>
+            </span>
+            <span>:</span>
+            <span class="flip-container">
+                <data class="minutes tens flip">0</data>
+            </span>
+            <span class="flip-container">
+                <data class="minutes units flip">0</data>
+            </span>
+            <span class="flip-container ml-2">
+                <data class="amOrPM flip">AM</data>
+            </span>
         </time>
       
-      </main>
+        <!-- Date -->
+        <time class="date flex items-center space-x-2">
+            <span class="cube-container">
+                <data class="month cube">Month</data>
+            </span>
+            <span class="cube-container">
+                <data class="dayOfMonth cube">00</data>
+            </span>
+            <span class="cube-container">
+                <data class="year cube">0000</data>
+            </span>
+            <span class="cube-container">
+                <data class="dayOfWeek cube">Day</data>
+            </span>
+        </time>
+      
+    </main>
     
 </body>
 </html>
