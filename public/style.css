@@ -611,6 +611,57 @@ body {
   animation: flip 0.6s ease-in-out;
 }
 
+.seconds-container {
+  position: relative;
+  /* Required for absolute positioning of AM/PM */
+}
+
+/* Enlarge the colons */
+
+.time span:not(.flip-container):not(.ml-2) {
+  font-size: 72px;
+  /* Matches/enlarges colons */
+  line-height: 1;
+  /* Ensures proper alignment */
+  color: white;
+  /* Matches digits */
+  vertical-align: middle;
+  /* Aligns with digits */
+}
+
+/* Adjust spacing for AM/PM */
+
+.amOrPM {
+  font-size: 36px;
+  /* Smaller font size for AM/PM */
+  line-height: 1;
+  /* Compact line height */
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  border-radius: 0;
+  width: auto;
+  height: auto;
+  position: absolute;
+  /* For fine positioning */
+  top: -62px;
+  /* Maintain position */
+  right: -80px;
+  /* Reduce spacing with seconds */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Adjust seconds container to support relative positioning */
+
+.flip-container.ml-2 {
+  position: relative;
+  /* Relative for AM/PM placement */
+  margin-left: 0.5rem;
+  /* Reduce spacing */
+}
+
 /* Cube Date Animation */
 
 .cube-container {
