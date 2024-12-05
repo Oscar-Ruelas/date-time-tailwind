@@ -20,6 +20,31 @@ const gotYear = dateNow.getFullYear();
 const gotDayOfWeek = dateNow.getDay();
 
 /************
+Background Images for Each Month
+************/
+const monthBackgrounds = [
+    "url('images/january.jpg')",  // January
+    "url('images/february.jpg')", // February
+    "url('images/march.jpg')",    // March
+    "url('images/april.jpg')",    // April
+    "url('images/may.jpg')",      // May
+    "url('images/june.jpg')",     // June
+    "url('images/july.jpg')",     // July
+    "url('images/august.jpg')",   // August
+    "url('images/september.jpg')",// September
+    "url('images/october.jpg')",  // October
+    "url(November.jpg)", // November
+    "url(December.jpg)"  // December
+];
+
+/************
+Set Background Based on Month
+************/
+document.body.style.backgroundImage = monthBackgrounds[gotMonth];
+document.body.style.backgroundSize = "cover";
+document.body.style.backgroundPosition = "center";
+
+/************
 Get DOM Elements
 ************/
 const month = document.querySelector(".month");

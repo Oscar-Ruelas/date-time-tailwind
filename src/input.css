@@ -5,10 +5,16 @@
 
 /* Your Awesome Styles */
 body {
-    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    background-color: #570ee0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #fff;
     font-family: Arial, sans-serif;
 }
+
 
 .flip-container {
     perspective: 1000px;
@@ -18,7 +24,7 @@ body {
     display: inline-block;
     font-size: 4rem;
     font-weight: bold;
-    background-color: #333;
+    background-color: #04836e;
     border-radius: 5px;
     padding: 0.5rem 1rem;
     transform-origin: bottom;
@@ -75,7 +81,7 @@ body {
 .cube {
     display: inline-block;
     font-size: 2rem;
-    background-color: #444;
+    background-color: #7516ce;
     border-radius: 5px;
     padding: 0.25rem 0.5rem;
     transform-style: preserve-3d;
