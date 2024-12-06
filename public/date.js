@@ -23,18 +23,18 @@ const gotDayOfWeek = dateNow.getDay();
 Background Images for Each Month
 ************/
 const monthBackgrounds = [
-    "url('images/january.jpg')",  // January
-    "url('images/february.jpg')", // February
-    "url('images/march.jpg')",    // March
-    "url('images/april.jpg')",    // April
-    "url('images/may.jpg')",      // May
-    "url('images/june.jpg')",     // June
-    "url('images/july.jpg')",     // July
-    "url('images/august.jpg')",   // August
-    "url('images/september.jpg')",// September
-    "url('images/october.jpg')",  // October
-    "url(November.jpg)", // November
-    "url(December.jpg)"  // December
+    "url()",  // January
+    "url(images/February.jpg)", // February
+    "url(images/March.jpg)",    // March
+    "url(images/April.jpg)",    // April
+    "url(images/May.jpeg)",      // May
+    "url(images/June.jpg)",     // June
+    "url(images/July.jpg)",     // July
+    "url(images/August.jpeg)",   // August
+    "url(images/September.jpeg)",// September
+    "url(images/October.jpg)",  // October
+    "url(images/November.jpeg)", // November
+    "url(images/December.jpg)"  // December
 ];
 
 /************
