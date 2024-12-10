@@ -23,7 +23,7 @@ const gotDayOfWeek = dateNow.getDay();
 Background Images for Each Month
 ************/
 const monthBackgrounds = [
-    "url()",  // January
+    "url(images/January.jpg)",  // January
     "url(images/February.jpg)", // February
     "url(images/March.jpg)",    // March
     "url(images/April.jpg)",    // April
