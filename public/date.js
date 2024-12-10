@@ -38,6 +38,17 @@ const monthBackgrounds = [
 ];
 
 /************
+Preload Images
+************/
+const preloadImages = (imageUrls) => {
+  imageUrls.forEach((url) => {
+      const img = new Image();
+      img.src = url.slice(4, -1); // Remove "url()" for direct src assignment
+  });
+};
+preloadImages(monthBackgrounds);
+
+/************
 Set Background Based on User Preference or Default
 ************/
 const backgroundSelector = document.getElementById('background');
@@ -45,27 +56,22 @@ const userBackground = localStorage.getItem('preferredBackground');
 
 // Function to set background
 const setBackground = (background) => {
-    // Ensure immediate visual feedback by assigning directly
-    document.body.style.backgroundImage = background;
-
-    // Forcefully re-render the background property
-    document.body.style.transition = "none"; // Avoid fade-in lag
-    document.body.offsetHeight; // Trigger reflow
-    document.body.style.transition = ""; // Restore default transition
+  // Directly set background style
+  document.body.style.backgroundImage = background;
 };
 
 // Use user preference or default monthly background
 if (userBackground) {
-    setBackground(userBackground);
+  setBackground(userBackground);
 } else {
-    setBackground(monthBackgrounds[gotMonth]);
+  setBackground(monthBackgrounds[gotMonth]);
 }
 
 // Handle dropdown change
 backgroundSelector.addEventListener('change', (event) => {
-    const selectedValue = event.target.value;
-    setBackground(selectedValue || monthBackgrounds[gotMonth]); // Immediate update
-    localStorage.setItem('preferredBackground', selectedValue); // Persist choice
+  const selectedValue = event.target.value;
+  setBackground(selectedValue || monthBackgrounds[gotMonth]); // Immediate update
+  localStorage.setItem('preferredBackground', selectedValue); // Persist choice
 });
 
 /************
