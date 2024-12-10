@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Your Awesome Styles */
 body {
     margin: 0;
     padding: 0;
@@ -14,6 +13,23 @@ body {
     color: #fff;
     font-family: Arial, sans-serif;
 }
+
+.background-selector {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    z-index: 1000;
+}
+
+#background {
+    margin-left: 10px;
+    color: black;
+}
+
 
 
 .flip-container {
