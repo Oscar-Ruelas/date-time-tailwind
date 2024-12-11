@@ -29,7 +29,7 @@ const monthBackgrounds = [
     "url(images/April.jpg)",    // April
     "url(images/May.jpeg)",      // May
     "url(images/June.jpg)",     // June
-    "url(images/July.jpeg)",     // July
+    "url(images/July.jpg)",     // July
     "url(images/August.jpeg)",   // August
     "url(images/September.jpeg)",// September
     "url(images/October.jpg)",  // October
